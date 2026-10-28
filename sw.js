@@ -1,7 +1,7 @@
 // PawAlert service worker. Verhoog VERSION bij ELKE wijziging aan de app, anders ziet niemand de update.
-const VERSION='3.38';
+const VERSION='3.39';
 const CACHE='pawalert-'+VERSION;
-const SHELL=['./','index.html','privacy.html','manifest.webmanifest','pawalert-icon-192.png','pawalert-icon-512.png','favicon.png','apple-touch-icon.png'];
+const SHELL=['./','index.html','privacy.html','privacy-fr.html','privacy-en.html','manifest.webmanifest','pawalert-icon-192.png','pawalert-icon-512.png','favicon.png','apple-touch-icon.png'];
 // Installeer alleen als index.html echt bij deze VERSION hoort (voorkomt dat een verouderde kopie uit een CDN-cache wordt opgeslagen).
 // Mislukt dit, dan probeert de browser het bij de volgende updatecontrole opnieuw.
 self.addEventListener('install',e=>{e.waitUntil((async()=>{
